@@ -1,0 +1,40 @@
+name: Update IBM News Dashboard
+
+on:
+  schedule:
+    - cron: '0 */19 * * *'  # Every 19 hours
+  workflow_dispatch:  # Manual trigger
+  push:
+    branches: [ main ]
+
+jobs:
+  update-feeds:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+        
+    - name: Fetch and process IBM news
+      run: |
+        python scripts/fetch_ibm_news.py
+        
+    - name: Generate HTML dashboard
+      run: |
+        python scripts/generate_dashboard.py
+        
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs
+        force_orphan: true

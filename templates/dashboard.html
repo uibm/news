@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBM Intelligence Dashboard</title>
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <i class="fas fa-newspaper"></i>
+                    <h1>IBM Intelligence Dashboard</h1>
+                </div>
+                <div class="stats-section">
+                    <div class="stat-item">
+                        <span class="stat-number">{{ total_articles }}</span>
+                        <span class="stat-label">Articles</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">{{ stats.total_feeds_processed }}</span>
+                        <span class="stat-label">Sources</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">{{ categories|length }}</span>
+                        <span class="stat-label">Categories</span>
+                    </div>
+                </div>
+                <div class="update-info">
+                    <i class="fas fa-clock"></i>
+                    Last updated: {{ generated_at[:19] }}Z
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="category-nav">
+            <button class="nav-btn active" data-category="all">
+                <i class="fas fa-globe"></i> All News
+            </button>
+            <button class="nav-btn" data-category="latest">
+                <i class="fas fa-newspaper"></i> Latest
+            </button>
+            {% for category_key, articles in categories.items() %}
+            {% if category_key != "latest" %}
+            <button class="nav-btn" data-category="{{ category_key }}">
+                {% if category_key == "ai_watson" %}
+                <i class="fas fa-brain"></i> AI & Watson
+                {% elif category_key == "cloud_hybrid" %}
+                <i class="fas fa-cloud"></i> Cloud & Hybrid
+                {% elif category_key == "quantum" %}
+                <i class="fas fa-atom"></i> Quantum
+                {% elif category_key == "enterprise" %}
+                <i class="fas fa-building"></i> Enterprise
+                {% elif category_key == "partnerships" %}
+                <i class="fas fa-handshake"></i> Partnerships
+                {% elif category_key == "research" %}
+                <i class="fas fa-flask"></i> Research
+                {% elif category_key == "financial" %}
+                <i class="fas fa-chart-line"></i> Financial
+                {% else %}
+                <i class="fas fa-tag"></i> {{ category_key.title() }}
+                {% endif %}
+                <span class="category-count">{{ articles|length }}</span>
+            </button>
+            {% endif %}
+            {% endfor %}
+        </nav>
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+            <!-- Top Stories Section -->
+            <section class="top-stories" id="section-all">
+                <h2><i class="fas fa-star"></i> Top IBM Stories</h2>
+                <div class="articles-grid">
+                    {% for article in latest_articles[:6] %}
+                    <article class="article-card priority-{{ article.priority }}">
+                        <div class="article-header">
+                            <span class="source-badge">{{ article.source }}</span>
+                            <span class="category-badge category-{{ article.category }}">
+                                {{ config.content_categories[article.category] or article.category.title() }}
+                            </span>
+                        </div>
+                        <h3 class="article-title">
+                            <a href="{{ article.link }}" target="_blank" rel="noopener">
+                                {{ article.title }}
+                            </a>
+                        </h3>
+                        <p class="article-description">{{ article.description[:200] }}{% if article.description|length > 200 %}...{% endif %}</p>
+                        <div class="article-footer">
+                            <span class="article-date">
+                                <i class="fas fa-calendar"></i>
+                                {% if article.pub_date %}
+                                {{ article.pub_date[:19] }}
+                                {% else %}
+                                Recent
+                                {% endif %}
+                            </span>
+                            <div class="article-keywords">
+                                {% for keyword in article.matched_keywords[:3] %}
+                                <span class="keyword-tag">{{ keyword }}</span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </article>
+                    {% endfor %}
+                </div>
+            </section>
+
+            <!-- Category Sections -->
+            {% for category_key, category_articles in categories.items() %}
+            <section class="category-section" id="section-{{ category_key }}" style="display: none;">
+                <h2>
+                    {% if category_key == "ai_watson" %}
+                    <i class="fas fa-brain"></i> AI & Watson
+                    {% elif category_key == "cloud_hybrid" %}
+                    <i class="fas fa-cloud"></i> Cloud & Hybrid
+                    {% elif category_key == "quantum" %}
+                    <i class="fas fa-atom"></i> Quantum Computing
+                    {% elif category_key == "enterprise" %}
+                    <i class="fas fa-building"></i> Enterprise Solutions
+                    {% elif category_key == "partnerships" %}
+                    <i class="fas fa-handshake"></i> Partnerships & Deals
+                    {% elif category_key == "research" %}
+                    <i class="fas fa-flask"></i> Research & Innovation
+                    {% elif category_key == "financial" %}
+                    <i class="fas fa-chart-line"></i> Financial & Business
+                    {% else %}
+                    <i class="fas fa-newspaper"></i> {{ config.content_categories[category_key] or category_key.title() }}
+                    {% endif %}
+                </h2>
+                <div class="articles-list">
+                    {% for article in category_articles %}
+                    <article class="article-item priority-{{ article.priority }}">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">{{ article.source }}</span>
+                                <span class="article-date">
+                                    {% if article.pub_date %}
+                                    {{ article.pub_date[:19] }}
+                                    {% else %}
+                                    Recent
+                                    {% endif %}
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="{{ article.link }}" target="_blank" rel="noopener">
+                                    {{ article.title }}
+                                </a>
+                            </h3>
+                            <p class="article-description">{{ article.description[:300] }}{% if article.description|length > 300 %}...{% endif %}</p>
+                            <div class="article-keywords">
+                                {% for keyword in article.matched_keywords %}
+                                <span class="keyword-tag">{{ keyword }}</span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </article>
+                    {% endfor %}
+                </div>
+            </section>
+            {% endfor %}
+        </main>
+
+        <!-- Footer -->
+        <footer class="dashboard-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Sources</h4>
+                    <ul>
+                        {% for category_name, category_data in config.feed_categories.items() %}
+                        {% for feed in category_data.feeds %}
+                        <li><a href="{{ feed.url }}" target="_blank">{{ feed.name }}</a></li>
+                        {% endfor %}
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Statistics</h4>
+                    <p>Processing time: {{ "%.2f"|format(stats.processing_time) }}s</p>
+                    <p>IBM articles found: {{ stats.ibm_articles_found }}</p>
+                    <p>Total articles scanned: {{ stats.total_articles_found }}</p>
+                </div>
+                <div class="footer-section">
+                    <h4>About</h4>
+                    <p>IBM Intelligence Dashboard aggregates IBM-related news from multiple sources.</p>
+                    <p>Powered by GitHub Actions • Updated every 4 hours</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="assets/js/dashboard.js"></script>
+</body>
+</html>
