@@ -3,7 +3,7 @@
 A comprehensive news aggregator that monitors IBM-related content across major technology and business publications. Built with GitHub Actions for automated updates and GitHub Pages for free hosting.
 
 ### Access The Dashboard
-- Your dashboard will be available at: `https://uibm.github.io/news/`
+- `https://uibm.github.io/news/`
 
 ## 📈 Monitored Sources
 
