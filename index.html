@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBM Intelligence Dashboard</title>
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <i class="fas fa-newspaper"></i>
+                    <h1>IBM Intelligence Dashboard</h1>
+                </div>
+                <div class="stats-section">
+                    <div class="stat-item">
+                        <span class="stat-number">38</span>
+                        <span class="stat-label">Articles</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">18</span>
+                        <span class="stat-label">Sources</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">7</span>
+                        <span class="stat-label">Categories</span>
+                    </div>
+                </div>
+                <div class="update-info">
+                    <i class="fas fa-clock"></i>
+                    Last updated: 2026-11-07T02:09:56Z
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="category-nav">
+            <button class="nav-btn active" data-category="all">
+                <i class="fas fa-globe"></i> All News
+            </button>
+            <button class="nav-btn" data-category="latest">
+                <i class="fas fa-newspaper"></i> Latest
+            </button>
+            
+            
+            <button class="nav-btn" data-category="quantum">
+                
+                <i class="fas fa-atom"></i> Quantum
+                
+                <span class="category-count">2</span>
+            </button>
+            
+            
+            
+            
+            
+            <button class="nav-btn" data-category="ai_watson">
+                
+                <i class="fas fa-brain"></i> AI & Watson
+                
+                <span class="category-count">11</span>
+            </button>
+            
+            
+            
+            <button class="nav-btn" data-category="partnerships">
+                
+                <i class="fas fa-handshake"></i> Partnerships
+                
+                <span class="category-count">1</span>
+            </button>
+            
+            
+            
+            <button class="nav-btn" data-category="cloud_hybrid">
+                
+                <i class="fas fa-cloud"></i> Cloud & Hybrid
+                
+                <span class="category-count">4</span>
+            </button>
+            
+            
+            
+            <button class="nav-btn" data-category="financial">
+                
+                <i class="fas fa-chart-line"></i> Financial
+                
+                <span class="category-count">1</span>
+            </button>
+            
+            
+            
+            <button class="nav-btn" data-category="enterprise">
+                
+                <i class="fas fa-building"></i> Enterprise
+                
+                <span class="category-count">2</span>
+            </button>
+            
+            
+        </nav>
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+            <!-- Top Stories Section -->
+            <section class="top-stories" id="section-all">
+                <h2><i class="fas fa-star"></i> Top IBM Stories</h2>
+                <div class="articles-grid">
+                    
+                    <article class="article-card priority-1">
+                        <div class="article-header">
+                            <span class="source-badge">IBM Newsroom</span>
+                            <span class="category-badge category-quantum">
+                                Quantum Computing
+                            </span>
+                        </div>
+                        <h3 class="article-title">
+                            <a href="https://newsroom.ibm.com/2026-11-06-ibm-unveils-its-most-advanced-quantum-computer-in-chicago,-marking-a-milestone-for-illinoiss-quantum-future" target="_blank" rel="noopener">
+                                IBM Unveils Its Most Advanced Quantum Computer in Chicago, Marking a Milestone for Illinois's Quantum Future
+                            </a>
+                        </h3>
+                        <p class="article-description">Hosted by the University of Chicago, IBM Quantum System Two is now operational at Hyde Park Labs and will be a prominent fixture of Illinois Quantum and Microelectronics Park (IQMP) upon the site’s co...</p>
+                        <div class="article-footer">
+                            <span class="article-date">
+                                <i class="fas fa-calendar"></i>
+                                
+                                2026-11-06T20:17:00
+                                
+                            </span>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ibm quantum</span>
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-card priority-1">
+                        <div class="article-header">
+                            <span class="source-badge">IBM Newsroom</span>
+                            <span class="category-badge category-quantum">
+                                Quantum Computing
+                            </span>
+                        </div>
+                        <h3 class="article-title">
+                            <a href="https://newsroom.ibm.com/2026-11-05-oak-ridge-national-lab,-ibm,-and-amd-launch-new-co-design-platform-for-quantum-error-correction" target="_blank" rel="noopener">
+                                Oak Ridge National Lab, IBM, and AMD Launch New Co-Design Platform for Quantum Error Correction
+                            </a>
+                        </h3>
+                        <p class="article-description">New initiative combines U.S. leadership in quantum and high-performance computing to align with the Department of Energy’s Quantum Genesis Mission to accelerate a path toward a scientifically relevant...</p>
+                        <div class="article-footer">
+                            <span class="article-date">
+                                <i class="fas fa-calendar"></i>
+                                
+                                2026-11-05T13:00:00
+                                
+                            </span>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-card priority-1">
+                        <div class="article-header">
+                            <span class="source-badge">IBM Redbooks</span>
+                            <span class="category-badge category-latest">
+                                Latest IBM News
+                            </span>
+                        </div>
+                        <h3 class="article-title">
+                            <a href="https://www.redbooks.ibm.com/docs/MD260033/MD260033.html" target="_blank" rel="noopener">
+                                Delivering SAP with IBM Bob
+                            </a>
+                        </h3>
+                        <p class="article-description"></p>
+                        <div class="article-footer">
+                            <span class="article-date">
+                                <i class="fas fa-calendar"></i>
+                                
+                                2026-11-03T03:22:25
+                                
+                            </span>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-card priority-2">
+                        <div class="article-header">
+                            <span class="source-badge">IT Jungle</span>
+                            <span class="category-badge category-financial">
+                                Financial & Business
+                            </span>
+                        </div>
+                        <h3 class="article-title">
+                            <a href="https://www.itjungle.com/2026/11/02/power-systems-turns-in-another-great-quarter/" target="_blank" rel="noopener">
+                                Power Systems Turns In Another Great Quarter
+                            </a>
+                        </h3>
+                        <p class="article-description"><p>We have been saying for some time that we think that Big Blue can get the Power Systems hardware business, including servers and operating systems but not including various kinds of tech support, t...</p>
+                        <div class="article-footer">
+                            <span class="article-date">
+                                <i class="fas fa-calendar"></i>
+                                
+                                2026-11-02T05:05:45
+                                
+                            </span>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">big blue</span>
+                                
+                                <span class="keyword-tag">ibm z</span>
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-card priority-2">
+                        <div class="article-header">
+                            <span class="source-badge">IT Jungle</span>
+                            <span class="category-badge category-enterprise">
+                                Enterprise Solutions
+                            </span>
+                        </div>
+                        <h3 class="article-title">
+                            <a href="https://www.itjungle.com/2026/11/02/big-blue-is-right-on-schedule-with-fall-2026-ibm-i-tech-refreshes/" target="_blank" rel="noopener">
+                                Big Blue Is Right On Schedule With Fall 2026 IBM i Tech Refreshes
+                            </a>
+                        </h3>
+                        <p class="article-description"><p>After delaying the spring Technology Refreshes for three months earlier this year, IBM is back on track with the fall TRs. IBM i shops will find a raft of new capabilities in the newly announced IB...</p>
+                        <div class="article-footer">
+                            <span class="article-date">
+                                <i class="fas fa-calendar"></i>
+                                
+                                2026-11-02T05:04:24
+                                
+                            </span>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">big blue</span>
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-card priority-2">
+                        <div class="article-header">
+                            <span class="source-badge">IT Jungle</span>
+                            <span class="category-badge category-latest">
+                                Latest IBM News
+                            </span>
+                        </div>
+                        <h3 class="article-title">
+                            <a href="https://www.itjungle.com/2026/11/02/guru-environment-variables-global-variables-wearing-hiking-boots/" target="_blank" rel="noopener">
+                                Guru: Environment Variables – Global Variables Wearing Hiking Boots
+                            </a>
+                        </h3>
+                        <p class="article-description"><p>Sometimes a program knows one tiny piece of information that another program, several calls farther down the stack, needs to know.</p>
+<p>The obvious solution is to add another parameter. But somet...</p>
+                        <div class="article-footer">
+                            <span class="article-date">
+                                <i class="fas fa-calendar"></i>
+                                
+                                2026-11-02T05:03:30
+                                
+                            </span>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                </div>
+            </section>
+
+            <!-- Category Sections -->
+            
+            <section class="category-section" id="section-quantum" style="display: none;">
+                <h2>
+                    
+                    <i class="fas fa-atom"></i> Quantum Computing
+                    
+                </h2>
+                <div class="articles-list">
+                    
+                    <article class="article-item priority-1">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">IBM Newsroom</span>
+                                <span class="article-date">
+                                    
+                                    2026-11-06T20:17:00
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://newsroom.ibm.com/2026-11-06-ibm-unveils-its-most-advanced-quantum-computer-in-chicago,-marking-a-milestone-for-illinoiss-quantum-future" target="_blank" rel="noopener">
+                                    IBM Unveils Its Most Advanced Quantum Computer in Chicago, Marking a Milestone for Illinois's Quantum Future
+                                </a>
+                            </h3>
+                            <p class="article-description">Hosted by the University of Chicago, IBM Quantum System Two is now operational at Hyde Park Labs and will be a prominent fixture of Illinois Quantum and Microelectronics Park (IQMP) upon the site’s completion.</p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ibm quantum</span>
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-item priority-1">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">IBM Newsroom</span>
+                                <span class="article-date">
+                                    
+                                    2026-11-05T13:00:00
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://newsroom.ibm.com/2026-11-05-oak-ridge-national-lab,-ibm,-and-amd-launch-new-co-design-platform-for-quantum-error-correction" target="_blank" rel="noopener">
+                                    Oak Ridge National Lab, IBM, and AMD Launch New Co-Design Platform for Quantum Error Correction
+                                </a>
+                            </h3>
+                            <p class="article-description">New initiative combines U.S. leadership in quantum and high-performance computing to align with the Department of Energy’s Quantum Genesis Mission to accelerate a path toward a scientifically relevant quantum computer by 2028</p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                </div>
+            </section>
+            
+            <section class="category-section" id="section-latest" style="display: none;">
+                <h2>
+                    
+                    <i class="fas fa-newspaper"></i> Latest IBM News
+                    
+                </h2>
+                <div class="articles-list">
+                    
+                    <article class="article-item priority-1">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">IBM Redbooks</span>
+                                <span class="article-date">
+                                    
+                                    2026-11-03T03:22:25
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://www.redbooks.ibm.com/docs/MD260033/MD260033.html" target="_blank" rel="noopener">
+                                    Delivering SAP with IBM Bob
+                                </a>
+                            </h3>
+                            <p class="article-description"></p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-item priority-2">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">IT Jungle</span>
+                                <span class="article-date">
+                                    
+                                    2026-11-02T05:03:30
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://www.itjungle.com/2026/11/02/guru-environment-variables-global-variables-wearing-hiking-boots/" target="_blank" rel="noopener">
+                                    Guru: Environment Variables – Global Variables Wearing Hiking Boots
+                                </a>
+                            </h3>
+                            <p class="article-description"><p>Sometimes a program knows one tiny piece of information that another program, several calls farther down the stack, needs to know.</p>
+<p>The obvious solution is to add another parameter. But sometimes that requires that new parameter added to one or more programs in the call stack. Before long, ...</p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-item priority-2">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">IT Jungle</span>
+                                <span class="article-date">
+                                    
+                                    2026-11-02T05:02:56
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://www.itjungle.com/2026/11/02/a-new-ibm-i-entity-takes-shape-power-by-fortra/" target="_blank" rel="noopener">
+                                    A New IBM i Entity Takes Shape: Power By Fortra
+                                </a>
+                            </h3>
+                            <p class="article-description"><p>Attendees of the COMMON NAViGATE conference last week were able to catch a glimpse of a new organization making its way in the IBM i world: Power by Fortra. The entity is not a separate company from Fortra. Rather, it’s a virtual carveout of sorts of all of Fortra’s IBM i products as well as its ...</p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-item priority-1">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">IBM Redbooks</span>
+                                <span class="article-date">
+                                    
+                                    2026-10-29T05:00:48
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://www.redbooks.ibm.com/abstracts/sg248455.html" target="_blank" rel="noopener">
+                                    IBM Fibre Channel Endpoint Security for IBM DS8000 and IBM Z
+                                </a>
+                            </h3>
+                            <p class="article-description"></p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ibm z</span>
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-item priority-1">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">IBM Redbooks</span>
+                                <span class="article-date">
+                                    
+                                    2026-10-29T03:28:04
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://www.redbooks.ibm.com/abstracts/sg248599.html" target="_blank" rel="noopener">
+                                    Cyber Resiliency and Scanning with IBM Storage Sentinel and Index Engines CyberSense
+                                </a>
+                            </h3>
+                            <p class="article-description"></p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                                <span class="keyword-tag">ibm storage</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-item priority-1">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">IBM Redbooks</span>
+                                <span class="article-date">
+                                    
+                                    2026-10-26T06:31:19
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://www.redbooks.ibm.com/abstracts/sg248579.html" target="_blank" rel="noopener">
+                                    IBM z17 (9175) Technical Guide
+                                </a>
+                            </h3>
+                            <p class="article-description"></p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-item priority-2">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">IT Jungle</span>
+                                <span class="article-date">
+                                    
+                                    2026-10-26T04:03:01
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://www.itjungle.com/2026/10/26/guru-analyzing-user-session-statistics-part-2/" target="_blank" rel="noopener">
+                                    Guru: Analyzing User Session Statistics, Part 2
+                                </a>
+                            </h3>
+                            <p class="article-description"><p>In <a href="https://www.itjungle.com/2026/07/20/guru-analyzing-user-session-statistics-part-1/" rel="noopener" target="_blank">part one</a> of this tip, I showed how to determine the number of times a user signed in and signed out of IBM i for a given period. In this tip, I will show how to get t...</p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-item priority-2">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">IT Jungle</span>
+                                <span class="article-date">
+                                    
+                                    2026-10-26T04:01:31
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://www.itjungle.com/2026/10/26/ibm-i-ptf-guide-volume-28-number-37/" target="_blank" rel="noopener">
+                                    IBM i PTF Guide, Volume 28, Number 37
+                                </a>
+                            </h3>
+                            <p class="article-description"><p>Well, brace yourself. We have two things you need to be aware of and a slew, an absolute slew, of security vulnerabilities in the IBM i stack.</p>
+<p>To begin with, IBM System Planning Tool for POWER processor-based systems – SPT Version 6.26.286.0 is available for download. You can get it <a hre...</p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-item priority-1">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">IBM Redbooks</span>
+                                <span class="article-date">
+                                    
+                                    2026-10-21T09:11:32
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://www.redbooks.ibm.com/docs/MD260026/MD260026.html" target="_blank" rel="noopener">
+                                    IBM b-type Gen 8 Installation, Migration, and Best Practices Guide
+                                </a>
+                            </h3>
+                            <p class="article-description"></p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-item priority-1">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">IBM Redbooks</span>
+                                <span class="article-date">
+                                    
+                                    2026-10-19T03:29:17
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://www.redbooks.ibm.com/abstracts/sg248608.html" target="_blank" rel="noopener">
+                                    IBM z17 ME2 and IBM z17 MER Technical Guide
+                                </a>
+                            </h3>
+                            <p class="article-description"></p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-item priority-1">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">IBM Redbooks</span>
+                                <span class="article-date">
+                                    
+                                    2026-10-16T12:25:30
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://www.redbooks.ibm.com/redpieces/abstracts/redp5736.html" target="_blank" rel="noopener">
+                                    Do More with Less: Automating IBM Storage FlashSystem Tasks with REST APIs, PowerShell, Scripting, and Ansible
+                                </a>
+                            </h3>
+                            <p class="article-description"></p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                                <span class="keyword-tag">ibm storage</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-item priority-1">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">IBM Redbooks</span>
+                                <span class="article-date">
+                                    
+                                    2026-10-14T02:07:47
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://www.redbooks.ibm.com/redpieces/abstracts/sg248604.html" target="_blank" rel="noopener">
+                                    The Definitive Guide to IBM Storage FlashSystem and AIX Integration
+                                </a>
+                            </h3>
+                            <p class="article-description"></p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                                <span class="keyword-tag">ibm storage</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-item priority-1">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">IBM Redbooks</span>
+                                <span class="article-date">
+                                    
+                                    2026-09-23T07:14:07
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://www.redbooks.ibm.com/docs/MD260040/MD260040.html" target="_blank" rel="noopener">
+                                    Introduction to IBM Storage Scale and Storage Scale System
+                                </a>
+                            </h3>
+                            <p class="article-description"></p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                                <span class="keyword-tag">ibm storage</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-item priority-1">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">IBM Redbooks</span>
+                                <span class="article-date">
+                                    
+                                    2026-09-17T10:30:33
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://www.redbooks.ibm.com/docs/MD260032/MD260032.html" target="_blank" rel="noopener">
+                                    IBM Power S1112 Technical Overview and Introduction
+                                </a>
+                            </h3>
+                            <p class="article-description"></p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                                <span class="keyword-tag">ibm power</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-item priority-1">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">IBM Redbooks</span>
+                                <span class="article-date">
+                                    
+                                    2026-09-08T12:27:54
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://www.redbooks.ibm.com/abstracts/sg248549.html" target="_blank" rel="noopener">
+                                    IBM Storage Virtualize and VMware: Integrations, Implementation, and Best Practices
+                                </a>
+                            </h3>
+                            <p class="article-description"></p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                                <span class="keyword-tag">ibm storage</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-item priority-1">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">IBM Redbooks</span>
+                                <span class="article-date">
+                                    
+                                    2026-09-02T07:58:44
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://www.redbooks.ibm.com/docs/MD260029/MD260029.html" target="_blank" rel="noopener">
+                                    IBM Storage as a Service for IBM DS8000 Offering Guide
+                                </a>
+                            </h3>
+                            <p class="article-description"></p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                                <span class="keyword-tag">ibm storage</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-item priority-1">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">IBM Redbooks</span>
+                                <span class="article-date">
+                                    
+                                    2026-08-26T08:34:03
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://www.redbooks.ibm.com/abstracts/sg248446.html" target="_blank" rel="noopener">
+                                    Getting Started with Business Continuity on IBM Z
+                                </a>
+                            </h3>
+                            <p class="article-description"></p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ibm z</span>
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                </div>
+            </section>
+            
+            <section class="category-section" id="section-ai_watson" style="display: none;">
+                <h2>
+                    
+                    <i class="fas fa-brain"></i> AI & Watson
+                    
+                </h2>
+                <div class="articles-list">
+                    
+                    <article class="article-item priority-1">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">AI Business</span>
+                                <span class="article-date">
+                                    
+                                    2026-10-30T16:01:43
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://aibusiness.com/generative-ai/prompt-ai-demand-is-booming" target="_blank" rel="noopener">
+                                    Prompt: AI demand is booming; the economics are getting complicated
+                                </a>
+                            </h3>
+                            <p class="article-description">Anthropic’s IPO filing offers a glimpse into soaring enterprise AI demand, but price competition and the cost of delivering AI are complicating the path to profitability.</p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">enterprise ai</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-item priority-1">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">AI Business</span>
+                                <span class="article-date">
+                                    
+                                    2026-10-30T14:08:35
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://aibusiness.com/foundation-models/anthropic-ipo-puts-enterprise-ai-returns-in-focus" target="_blank" rel="noopener">
+                                    Anthropic IPO puts enterprise AI returns in focus
+                                </a>
+                            </h3>
+                            <p class="article-description">The SEC filing reveals the scale of the vendor’s commercial growth while raising a broader question of how enterprise buyers can tell if AI spending is paying off.</p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">enterprise ai</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-item priority-1">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">AI Business</span>
+                                <span class="article-date">
+                                    
+                                    2026-10-30T11:05:10
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://aibusiness.com/generative-ai/anthropic-ipo-filing-offers-clues-enterprise-ai-model-price-wars" target="_blank" rel="noopener">
+                                    Anthropic IPO filing offers clues for enterprise AI, model price wars
+                                </a>
+                            </h3>
+                            <p class="article-description">With the frontier AI lab about to go public, businesses mull the long-term stability of the Claude creator. OpenAI goes on a price-cut binge to compete with cheap China models.</p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">enterprise ai</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-item priority-1">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">IBM Newsroom</span>
+                                <span class="article-date">
+                                    
+                                    2026-10-27T04:01:00
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://newsroom.ibm.com/2026-10-27-ibm-introduces-identity-and-control-for-ai-agents,-securing-frontier-intelligence-for-the-enterprise" target="_blank" rel="noopener">
+                                    IBM Introduces Identity and Control for AI Agents, Securing Frontier Intelligence for the Enterprise
+                                </a>
+                            </h3>
+                            <p class="article-description">-	Enterprises are deploying agents faster than they can verify them. HashiCorp Vault uses Agent Identity to give each agent a governed identity</p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-item priority-2">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">IT Jungle</span>
+                                <span class="article-date">
+                                    
+                                    2026-10-26T04:05:59
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://www.itjungle.com/2026/10/26/critical-php2shell-security-vulns-evoke-black-october/" target="_blank" rel="noopener">
+                                    Critical PHP2Shell Security Vulns Evoke ‘Black October’
+                                </a>
+                            </h3>
+                            <p class="article-description"><p>AI helped uncover a pair of critical security vulnerabilities in PHP that can be used to execute code, including on IBM i servers, sent administrators around the world scrambling to install patches on a large swath of the Internet’s Web servers before cybercriminals can get to them. The flaws, al...</p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-item priority-2">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">IT Jungle</span>
+                                <span class="article-date">
+                                    
+                                    2026-10-26T04:02:03
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://www.itjungle.com/2026/10/26/fresche-launches-opsiq-a-free-ai-based-operation-assistant-for-ibm-i/" target="_blank" rel="noopener">
+                                    Fresche Launches OpsIQ, a Free AI-Based Operation Assistant for IBM i
+                                </a>
+                            </h3>
+                            <p class="article-description"><p>IBM i developers have embraced AI-based coding tools, such as IBM’s Bob and Anthropic’s Claude Code, but IBM i administrators so far haven’t benefited from the AI productivity boost in the same way. That is starting to change, and one of the first AI-based administrative helpers is a free tool la...</p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-item priority-1">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">AI Business</span>
+                                <span class="article-date">
+                                    
+                                    2026-10-21T13:05:01
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://aibusiness.com/generative-ai/how-payroll-giant-adp-practices-ai-governance-human-oversight" target="_blank" rel="noopener">
+                                    How payroll giant ADP practices AI governance and human oversight
+                                </a>
+                            </h3>
+                            <p class="article-description">The governance approach focuses on key principles of transparency, explainability, risk management, privacy and security.</p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ai governance</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-item priority-1">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">AI Business</span>
+                                <span class="article-date">
+                                    
+                                    2026-10-14T20:35:20
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://aibusiness.com/generative-ai/ibm-agentic-ai-reshaping-governance-controls-trust" target="_blank" rel="noopener">
+                                    IBM: Agentic AI is reshaping governance, controls and trust
+                                </a>
+                            </h3>
+                            <p class="article-description">As AI agents move from answering questions to making decisions and acting, businesses face a growing challenge of keeping accountability in step with the pace of change.</p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-item priority-1">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">IBM Redbooks</span>
+                                <span class="article-date">
+                                    
+                                    2026-09-15T08:25:57
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://www.redbooks.ibm.com/docs/MD260039/MD260039.html" target="_blank" rel="noopener">
+                                    IBM Data Highway Blueprint for Life Sciences:  Built for AI-Ready Scientific Data
+                                </a>
+                            </h3>
+                            <p class="article-description"></p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-item priority-1">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">IBM Redbooks</span>
+                                <span class="article-date">
+                                    
+                                    2026-09-10T01:15:42
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://www.redbooks.ibm.com/abstracts/redp5758.html" target="_blank" rel="noopener">
+                                    AI on IBM Z : Applications and Examples
+                                </a>
+                            </h3>
+                            <p class="article-description"></p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ibm z</span>
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-item priority-2">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">Data Science at Home</span>
+                                <span class="article-date">
+                                    
+                                    2025-06-18T14:34:45
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://datascienceathome.podbean.com/e/brains-in-the-machine-the-rise-of-neuromorphic-computing-ep-285/" target="_blank" rel="noopener">
+                                    Brains in the Machine: The Rise of Neuromorphic Computing (Ep. 285)
+                                </a>
+                            </h3>
+                            <p class="article-description">In this episode of Data Science at Home, we explore the fascinating world of neuromorphic computing — a brain-inspired approach to computation that could reshape the future of AI and robotics. The episode breaks down how neuromorphic systems differ from conventional AI architectures like transformer...</p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                </div>
+            </section>
+            
+            <section class="category-section" id="section-partnerships" style="display: none;">
+                <h2>
+                    
+                    <i class="fas fa-handshake"></i> Partnerships & Deals
+                    
+                </h2>
+                <div class="articles-list">
+                    
+                    <article class="article-item priority-1">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">IBM Newsroom</span>
+                                <span class="article-date">
+                                    
+                                    2026-10-28T14:00:00
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://newsroom.ibm.com/2026-10-28-usta-and-ibm-announce-five-year-renewal-of-longstanding-partnership" target="_blank" rel="noopener">
+                                    USTA and IBM Announce Five-Year Renewal of Longstanding Partnership
+                                </a>
+                            </h3>
+                            <p class="article-description"></p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                </div>
+            </section>
+            
+            <section class="category-section" id="section-cloud_hybrid" style="display: none;">
+                <h2>
+                    
+                    <i class="fas fa-cloud"></i> Cloud & Hybrid
+                    
+                </h2>
+                <div class="articles-list">
+                    
+                    <article class="article-item priority-2">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">IT Jungle</span>
+                                <span class="article-date">
+                                    
+                                    2026-10-26T04:04:20
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://www.itjungle.com/2026/10/26/why-fortra-partnered-with-falconstor-to-launch-continuity-care-a-validated-recovery-service-for-ibm-i/" target="_blank" rel="noopener">
+                                    Why Fortra Partnered with FalconStor to Launch Continuity Care: A Validated Recovery Service for IBM i
+                                </a>
+                            </h3>
+                            <p class="article-description"><p>With over 7,000 Power Systems customers, Fortra is one of the largest software conglomerates serving the IBM i and AIX communities and it is by far the largest supplier of systems software for Power Systems. The company is also a key development partner of Big Blue, having nine years ago taken ov...</p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">big blue</span>
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-item priority-1">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">IBM Redbooks</span>
+                                <span class="article-date">
+                                    
+                                    2026-10-10T02:01:59
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://www.redbooks.ibm.com/abstracts/sg248381.html" target="_blank" rel="noopener">
+                                    IBM DS8000 Transparent Cloud Tiering: DS8000 Release 9.3
+                                </a>
+                            </h3>
+                            <p class="article-description"></p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-item priority-1">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">IBM Redbooks</span>
+                                <span class="article-date">
+                                    
+                                    2026-09-30T09:12:51
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://www.redbooks.ibm.com/docs/MD260014/MD260014.html" target="_blank" rel="noopener">
+                                    IBM Storage Defender: Protecting Red Hat OpenShift Containers and Virtual Machines
+                                </a>
+                            </h3>
+                            <p class="article-description"></p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">red hat</span>
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                                <span class="keyword-tag">ibm storage</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-item priority-1">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">IBM Redbooks</span>
+                                <span class="article-date">
+                                    
+                                    2026-09-03T03:17:22
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://www.redbooks.ibm.com/abstracts/sg248594.html" target="_blank" rel="noopener">
+                                    Hybrid Cloud on IBM Power11
+                                </a>
+                            </h3>
+                            <p class="article-description"></p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                                <span class="keyword-tag">hybrid cloud</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                </div>
+            </section>
+            
+            <section class="category-section" id="section-financial" style="display: none;">
+                <h2>
+                    
+                    <i class="fas fa-chart-line"></i> Financial & Business
+                    
+                </h2>
+                <div class="articles-list">
+                    
+                    <article class="article-item priority-2">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">IT Jungle</span>
+                                <span class="article-date">
+                                    
+                                    2026-11-02T05:05:45
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://www.itjungle.com/2026/11/02/power-systems-turns-in-another-great-quarter/" target="_blank" rel="noopener">
+                                    Power Systems Turns In Another Great Quarter
+                                </a>
+                            </h3>
+                            <p class="article-description"><p>We have been saying for some time that we think that Big Blue can get the Power Systems hardware business, including servers and operating systems but not including various kinds of tech support, to rise above $2 billion in annual sales. And by all indications, now that IBM has turned in three of...</p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">big blue</span>
+                                
+                                <span class="keyword-tag">ibm z</span>
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                </div>
+            </section>
+            
+            <section class="category-section" id="section-enterprise" style="display: none;">
+                <h2>
+                    
+                    <i class="fas fa-building"></i> Enterprise Solutions
+                    
+                </h2>
+                <div class="articles-list">
+                    
+                    <article class="article-item priority-2">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">IT Jungle</span>
+                                <span class="article-date">
+                                    
+                                    2026-11-02T05:04:24
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://www.itjungle.com/2026/11/02/big-blue-is-right-on-schedule-with-fall-2026-ibm-i-tech-refreshes/" target="_blank" rel="noopener">
+                                    Big Blue Is Right On Schedule With Fall 2026 IBM i Tech Refreshes
+                                </a>
+                            </h3>
+                            <p class="article-description"><p>After delaying the spring Technology Refreshes for three months earlier this year, IBM is back on track with the fall TRs. IBM i shops will find a raft of new capabilities in the newly announced IBM i 7.6 TR3 and 7.5 TR9, including new services for tracking security patches, performance improveme...</p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">big blue</span>
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="article-item priority-2">
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="source-badge">IT Jungle</span>
+                                <span class="article-date">
+                                    
+                                    2026-11-02T05:01:25
+                                    
+                                </span>
+                            </div>
+                            <h3 class="article-title">
+                                <a href="https://www.itjungle.com/2026/11/02/ibm-i-ptf-guide-volume-28-number-38/" target="_blank" rel="noopener">
+                                    IBM i PTF Guide, Volume 28, Number 38
+                                </a>
+                            </h3>
+                            <p class="article-description"><p>Welcome to this week, where the IBM i platform has two issues you need to be aware of as well as a security bulletin. Yup, we said “a” there, meaning only one, meaning it looks like people were out trick or treating instead of bug hunting. Which is fine.</p>
+<p>The first issue is related to Acces...</p>
+                            <div class="article-keywords">
+                                
+                                <span class="keyword-tag">ibm</span>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    
+                </div>
+            </section>
+            
+        </main>
+
+        <!-- Footer -->
+        <footer class="dashboard-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Sources</h4>
+                    <ul>
+                        
+                        
+                        <li><a href="https://newsroom.ibm.com/announcements?pagetemplate=rss" target="_blank">IBM Newsroom</a></li>
+                        
+                        <li><a href="https://www.redbooks.ibm.com/rss/all.xml" target="_blank">IBM Redbooks</a></li>
+                        
+                        <li><a href="https://itjungle.com/feed" target="_blank">IT Jungle</a></li>
+                        
+                        
+                        
+                        <li><a href="https://techcrunch.com/feed" target="_blank">TechCrunch</a></li>
+                        
+                        <li><a href="https://feeds.bbci.co.uk/news/technology/rss.xml" target="_blank">BBC Technology</a></li>
+                        
+                        <li><a href="https://feeds.arstechnica.com/arstechnica/technology-lab" target="_blank">Ars Technica</a></li>
+                        
+                        <li><a href="https://www.theverge.com/rss/index.xml" target="_blank">The Verge</a></li>
+                        
+                        <li><a href="https://www.wired.com/feed/rss" target="_blank">Wired</a></li>
+                        
+                        <li><a href="https://www.engadget.com/rss.xml" target="_blank">Engadget</a></li>
+                        
+                        
+                        
+                        <li><a href="https://feeds.bbci.co.uk/news/business/rss.xml" target="_blank">BBC Business</a></li>
+                        
+                        <li><a href="https://feeds.reuters.com/reuters/businessNews" target="_blank">Reuters Business</a></li>
+                        
+                        <li><a href="https://venturebeat.com/feed/" target="_blank">VentureBeat</a></li>
+                        
+                        
+                        
+                        <li><a href="https://aibusiness.com/rss.xml" target="_blank">AI Business</a></li>
+                        
+                        <li><a href="https://feed.podbean.com/datascienceathome/feed.xml" target="_blank">Data Science at Home</a></li>
+                        
+                        <li><a href="https://www.technologyreview.com/feed/" target="_blank">MIT Technology Review</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.infoworld.com/index.rss" target="_blank">InfoWorld</a></li>
+                        
+                        <li><a href="https://www.computerworld.com/news/rss2.xml" target="_blank">ComputerWorld</a></li>
+                        
+                        <li><a href="https://www.zdnet.com/news/rss.xml" target="_blank">ZDNet</a></li>
+                        
+                        
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Statistics</h4>
+                    <p>Processing time: 23.01s</p>
+                    <p>IBM articles found: 38</p>
+                    <p>Total articles scanned: 637</p>
+                </div>
+                <div class="footer-section">
+                    <h4>About</h4>
+                    <p>IBM Intelligence Dashboard aggregates IBM-related news from multiple sources.</p>
+                    <p>Powered by GitHub Actions • Updated every 4 hours</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="assets/js/dashboard.js"></script>
+</body>
+</html>
